@@ -1,0 +1,14 @@
+C:\Users\Miro\Documents\WindowsForms\WindowsFormsExercise1\WindowsFormsExercise1\bin\Debug\WindowsFormsExercise1.exe.config
+C:\Users\Miro\Documents\WindowsForms\WindowsFormsExercise1\WindowsFormsExercise1\bin\Debug\WindowsFormsExercise1.exe
+C:\Users\Miro\Documents\WindowsForms\WindowsFormsExercise1\WindowsFormsExercise1\bin\Debug\WindowsFormsExercise1.pdb
+C:\Users\Miro\Documents\WindowsForms\WindowsFormsExercise1\WindowsFormsExercise1\obj\Debug\WindowsFormsExercise1.csproj.AssemblyReference.cache
+C:\Users\Miro\Documents\WindowsForms\WindowsFormsExercise1\WindowsFormsExercise1\obj\Debug\WindowsFormsExercise1.LoginForm.resources
+C:\Users\Miro\Documents\WindowsForms\WindowsFormsExercise1\WindowsFormsExercise1\obj\Debug\WindowsFormsExercise1.Properties.Resources.resources
+C:\Users\Miro\Documents\WindowsForms\WindowsFormsExercise1\WindowsFormsExercise1\obj\Debug\WindowsFormsExercise1.csproj.GenerateResource.cache
+C:\Users\Miro\Documents\WindowsForms\WindowsFormsExercise1\WindowsFormsExercise1\obj\Debug\WindowsFormsExercise1.csproj.CoreCompileInputs.cache
+C:\Users\Miro\Documents\WindowsForms\WindowsFormsExercise1\WindowsFormsExercise1\obj\Debug\WindowsFormsExercise1.exe
+C:\Users\Miro\Documents\WindowsForms\WindowsFormsExercise1\WindowsFormsExercise1\obj\Debug\WindowsFormsExercise1.pdb
+C:\Users\Miro\Documents\WindowsForms\WindowsFormsExercise1\WindowsFormsExercise1\obj\Debug\WindowsFormsExercise1.DashboardForm.resources
+C:\Users\Miro\Documents\WindowsForms\WindowsFormsExercise1\WindowsFormsExercise1\obj\Debug\WindowsFormsExercise1.HomeForm.resources
+C:\Users\Miro\Documents\WindowsForms\WindowsFormsExercise1\WindowsFormsExercise1\obj\Debug\WindowsFormsExercise1.ShoppingListForm.resources
+C:\Users\Miro\Documents\WindowsForms\WindowsFormsExercise1\WindowsFormsExercise1\obj\Debug\WindowsFormsExercise1.ViewCartForm.resources
