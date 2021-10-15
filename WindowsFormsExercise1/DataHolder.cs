@@ -9,8 +9,21 @@ namespace WindowsFormsExercise1
         // -> add quantity property 
         public List<ShoppingCartItem> ShoppingCart = new List<ShoppingCartItem>();
         public List<Item> ShoppingList = new List<Item>();
+        
+        private static DataHolder instance = null;
+        public static DataHolder Instance
+        {
+            get
+            {
+                if (instance == null)
+                {
+                    instance = new DataHolder();
+                }
+                return instance;
+            }
+        }
 
-        public DataHolder()
+        private DataHolder()
         {
             // provide default data of items to shopping list
             ShoppingList.Add(new Item("A0001", "Laptop", "Jan 23, 2018", 20700.00, 69.00, 56));
@@ -21,9 +34,6 @@ namespace WindowsFormsExercise1
             ShoppingList.Add(new Item("A0221", "Monitor", "Mar 26, 2018", 1000.00, 69.00, 22));
             ShoppingList.Add(new Item("A3471", "Shoes", "Sep 10, 2018", 1999.00, 69.00, 71));
             ShoppingList.Add(new Item("A3477", "Shirt", "Nov 23, 2018", 700.00, 69.00, 99));
-
-            ShoppingCart.Add(new ShoppingCartItem("A3477", "Shirt", 700.00, 2));
-            ShoppingCart.Add(new ShoppingCartItem("A0221", "Monitor", 1000.00, 1));
         }
     }
 }

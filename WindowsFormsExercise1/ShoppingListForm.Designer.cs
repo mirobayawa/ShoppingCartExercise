@@ -36,6 +36,10 @@ namespace WindowsFormsExercise1
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.quantityUpDown = new System.Windows.Forms.NumericUpDown();
+            this.label7 = new System.Windows.Forms.Label();
+            this.itemNoLabel = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
             this.stockLabel = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
@@ -50,10 +54,8 @@ namespace WindowsFormsExercise1
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.viewCart = new System.Windows.Forms.Button();
-            this.itemNoLabel = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.quantityUpDown = new System.Windows.Forms.NumericUpDown();
+            this.label8 = new System.Windows.Forms.Label();
+            this.cartStock = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.quantityUpDown)).BeginInit();
             this.SuspendLayout();
@@ -104,6 +106,8 @@ namespace WindowsFormsExercise1
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.cartStock);
+            this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.quantityUpDown);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.itemNoLabel);
@@ -125,6 +129,44 @@ namespace WindowsFormsExercise1
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(543, 384);
             this.panel1.TabIndex = 5;
+            // 
+            // quantityUpDown
+            // 
+            this.quantityUpDown.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.quantityUpDown.Location = new System.Drawing.Point(312, 345);
+            this.quantityUpDown.Name = "quantityUpDown";
+            this.quantityUpDown.Size = new System.Drawing.Size(70, 22);
+            this.quantityUpDown.TabIndex = 22;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(244, 347);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(62, 16);
+            this.label7.TabIndex = 21;
+            this.label7.Text = "Quantity :";
+            // 
+            // itemNoLabel
+            // 
+            this.itemNoLabel.AutoSize = true;
+            this.itemNoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.itemNoLabel.Location = new System.Drawing.Point(213, 28);
+            this.itemNoLabel.Name = "itemNoLabel";
+            this.itemNoLabel.Size = new System.Drawing.Size(40, 16);
+            this.itemNoLabel.TabIndex = 20;
+            this.itemNoLabel.Text = "- - - - -";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(26, 28);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(60, 16);
+            this.label16.TabIndex = 19;
+            this.label16.Text = "Item No :";
             // 
             // stockLabel
             // 
@@ -272,43 +314,25 @@ namespace WindowsFormsExercise1
             this.viewCart.UseVisualStyleBackColor = false;
             this.viewCart.Click += new System.EventHandler(this.viewCart_Click);
             // 
-            // itemNoLabel
+            // label8
             // 
-            this.itemNoLabel.AutoSize = true;
-            this.itemNoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.itemNoLabel.Location = new System.Drawing.Point(213, 28);
-            this.itemNoLabel.Name = "itemNoLabel";
-            this.itemNoLabel.Size = new System.Drawing.Size(40, 16);
-            this.itemNoLabel.TabIndex = 20;
-            this.itemNoLabel.Text = "- - - - -";
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(26, 345);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(51, 16);
+            this.label8.TabIndex = 23;
+            this.label8.Text = "In Cart :";
             // 
-            // label16
+            // cartStock
             // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(26, 28);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(60, 16);
-            this.label16.TabIndex = 19;
-            this.label16.Text = "Item No :";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(244, 347);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(62, 16);
-            this.label7.TabIndex = 21;
-            this.label7.Text = "Quantity :";
-            // 
-            // quantityUpDown
-            // 
-            this.quantityUpDown.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.quantityUpDown.Location = new System.Drawing.Point(312, 345);
-            this.quantityUpDown.Name = "quantityUpDown";
-            this.quantityUpDown.Size = new System.Drawing.Size(70, 22);
-            this.quantityUpDown.TabIndex = 22;
+            this.cartStock.AutoSize = true;
+            this.cartStock.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cartStock.Location = new System.Drawing.Point(128, 347);
+            this.cartStock.Name = "cartStock";
+            this.cartStock.Size = new System.Drawing.Size(40, 16);
+            this.cartStock.TabIndex = 24;
+            this.cartStock.Text = "- - - - -";
             // 
             // ShoppingListForm
             // 
@@ -360,5 +384,7 @@ namespace WindowsFormsExercise1
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.NumericUpDown quantityUpDown;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label cartStock;
+        private System.Windows.Forms.Label label8;
     }
 }
