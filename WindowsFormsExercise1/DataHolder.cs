@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace WindowsFormsExercise1
 {
@@ -34,6 +35,13 @@ namespace WindowsFormsExercise1
             ShoppingList.Add(new Item("A0221", "Monitor", "Mar 26, 2018", 1000.00, 69.00, 22));
             ShoppingList.Add(new Item("A3471", "Shoes", "Sep 10, 2018", 1999.00, 69.00, 71));
             ShoppingList.Add(new Item("A3477", "Shirt", "Nov 23, 2018", 700.00, 69.00, 99));
+        }
+
+        public int getCartItems(string itemNo)
+        {
+            ShoppingCartItem duplicate = ShoppingCart.FirstOrDefault(item =>
+                item.ItemNo == itemNo);
+            return duplicate != null ? duplicate.Quantity : 0;
         }
     }
 }

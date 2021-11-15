@@ -24,22 +24,12 @@ namespace WindowsFormsExercise1
             shoppingList.DataSource = dh.ShoppingList;
         }
 
-        public bool IsEmpty<T>(List<T> list)
-        {
-            if (list == null)
-            {
-                return true;
-            }
-
-            return list.Count == 0;
-        }
-
         public void addToCart()
         {
             ShoppingCartItem duplicate = dh.ShoppingCart.FirstOrDefault(item => 
                 item.ItemNo == itemNoLabel.Text);
 
-            if (IsEmpty(dh.ShoppingCart))
+            if (dh.ShoppingCart.Count == 0)
             {
                 dh.ShoppingCart.Add(new ShoppingCartItem(itemNoLabel.Text, itemNameLabel.Text,
                     Convert.ToDouble(priceLabel.Text), Convert.ToInt32(quantityUpDown.Value)));
@@ -57,20 +47,6 @@ namespace WindowsFormsExercise1
             }
         }
 
-        private int itemsInCart()
-        {
-            DataHolder dh = DataHolder.Instance;
-            ShoppingCartItem duplicate = dh.ShoppingCart.FirstOrDefault(item =>
-                item.ItemNo == itemNoLabel.Text);
-            if (duplicate != null)
-            {
-                return duplicate.Quantity;
-            }
-            else
-            {
-                return 0;
-            }
-        }
 
         private void resetValues()
         {
@@ -80,7 +56,7 @@ namespace WindowsFormsExercise1
             priceLabel.Text = ((Item)shoppingList.SelectedItem).Price.ToString("#,##0.00");
             deliveryFeeLabel.Text = ((Item)shoppingList.SelectedItem).DeliveryFee.ToString("#,##0.00");
             stockLabel.Text = ((Item)shoppingList.SelectedItem).Stock.ToString();
-            cartStock.Text = itemsInCart().ToString();
+            cartStock.Text = dh.getCartItems(itemNoLabel.Text).ToString();
         }
 
         private void shoppingList_SelectedValueChanged(object sender, EventArgs e)

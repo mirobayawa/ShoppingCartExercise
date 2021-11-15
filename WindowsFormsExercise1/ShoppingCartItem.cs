@@ -17,5 +17,7 @@ namespace WindowsFormsExercise1
             this.Price = price;
             this.Quantity = quantity;
         }
+
+        
     }
 }
