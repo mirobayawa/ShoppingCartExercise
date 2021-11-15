@@ -39,9 +39,9 @@ namespace WindowsFormsExercise1
 
         public int getCartItems(string itemNo)
         {
-            ShoppingCartItem duplicate = ShoppingCart.FirstOrDefault(item =>
+            ShoppingCartItem selectedCart = ShoppingCart.FirstOrDefault(item =>
                 item.ItemNo == itemNo);
-            return duplicate != null ? duplicate.Quantity : 0;
+            return selectedCart != null ? selectedCart.Quantity : 0;
         }
     }
 }
